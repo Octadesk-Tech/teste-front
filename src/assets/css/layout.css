@@ -1,0 +1,118 @@
+.icon-arrow-left {
+    position: absolute;
+    margin-top: 30%;
+}
+
+.icon-arrow-right {
+    margin-top: -29%;
+    float: right;
+}
+
+.button-arrow-left {
+    padding-top: 15%;
+}
+
+.button-arrow-right {
+    padding-top: 18%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    body {
+        font-size: 2em;
+    }
+    .icon-arrow-left {
+        margin-top: 80%;
+    }
+    .icon-arrow-right {
+        margin-top: 92% !important;
+    }
+    .button-icon {
+        padding-right: 4%;
+        padding-left: 4%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        font-size: 2.3em;
+    }
+    h2 {
+        margin-top: 10%;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+    body {
+        font-size: 2em;
+    }
+    .icon-arrow-left {
+        margin-top: 95%;
+        margin-left: -58%;
+    }
+    .icon-arrow-right {
+        margin-top: 92% !important;
+        margin-right: -949%;
+    }
+    .buttom-arrow-left {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .buttom-arrow-right {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .slideshow-img {
+        margin-left: -5%;
+        margin-top: 13%;
+    }
+    .button-purple {
+        margin-left: 55% !important;
+    }
+    .button-icon {
+        padding-right: 5%;
+        padding-left: 5%;
+        font-size: 2.8em;
+    }
+    h2 {
+        margin-top: 10%;
+    }
+    .icon-arrow {
+        font-size: 4em;
+    }
+    .img-responsive {
+        max-width: 125%;
+    }
+    img {
+        width: 125%;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    body {
+        font-size: 2em;
+    }
+    .button-icon {
+        font-size: 3.1em;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .icon-arrow {
+        font-size: 4em;
+    }
+    .icon-arrow-right {
+        margin-right: -819%;
+    }
+    .icon-arrow-left {
+        margin-left: -62%;
+    }
+    .button-purple {
+        margin-left: 60% !important;
+    }
+    .slideshow {
+        margin-left: -18%;
+        margin-top: 12%;
+    }
+    .img-responsive {
+        max-width: 136%;
+    }
+    img {
+        width: 130%;
+    }
+}
