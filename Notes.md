@@ -1,4 +1,4 @@
-# Observações para rodar o projeto na máquina do cliente
+# Observações para rodar o projeto localmente na máquina
 Me utilizei do npm para gerenciar o front, sendo assim, há uma estrutura básica para que, uma vez que o projeto for clonado
 na máquina, seja executada uma rotina com o intuito de subir a aplicação em um servidor local
 
