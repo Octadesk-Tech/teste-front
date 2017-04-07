@@ -1,0 +1,30 @@
+{
+  "name": "teste-front",
+  "version": "1.0.0",
+  "description": "Teste para vaga de desenvolvedor Front-end",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aline-aline/teste-front.git"
+  },
+  "author": "Aline Cristina do Carmo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aline-aline/teste-front/issues"
+  },
+  "homepage": "https://github.com/aline-aline/teste-front#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-bower": "0.0.13",
+    "gulp-connect": "^5.0.0",
+    "gulp-csso": "^3.0.0",
+    "gulp-data": "^1.2.1",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-uglify": "^2.1.2",
+    "gulp-watch": "^4.3.11"
+  }
+}

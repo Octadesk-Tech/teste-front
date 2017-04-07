@@ -1,0 +1,21 @@
+{
+  "name": "teste-front",
+  "description": "Teste para vaga de desenvolvedor Front-end",
+  "main": "index.js",
+  "authors": [
+    "Aline Cristina do Carmo"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/aline-aline/teste-front",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "normalize-css": "^6.0.0"
+  }
+}
