@@ -1,0 +1,123 @@
+{
+    "itens": [{
+            "indicator": {
+                "icon": "icon-ticket-o",
+                "text": "Canais de Atendimento"
+            },
+            "img": {
+                "class": "ticket-img",
+                "alt": "Canais de Atendimento"
+            },
+            "text": {
+                "title": "Canais de atendimento",
+                "main": "Atenda seus clientes nos múltiplos canais de contato de forma simples, rápida e organizada com nosso sistema de atendimento e Help Desk.",
+                "content": "Administre em um único lugar todas as solicitações dos seus clientes independente do canal de contato: telefone, e-mail, chat, formulários web, central de ajuda, base de conhecimento e redes sociais."
+            },
+            "checks": [
+                "Mantenha todo o histórico de atendimento ao cliente centralizado",
+                "Responda rapidamente independente do canal de contato",
+                "Centralize toda sua comunicação em uma única plataforma"
+            ]
+        },
+        {
+            "indicator": {
+                "icon": "icon-clock-o",
+                "text": "Controle de prazos"
+            },
+            "img": {
+                "class": "deadline-img",
+                "alt": "Controle de prazos"
+            },
+            "text": {
+                "title": "Controle de prazos (SLA)",
+                "main": "Tenha clientes mais satisfeitos, gerencie com eficiência o prazo de resolução das solicitações.",
+                "content": "Com o SLA do Octadesk fica mais fácil alinhar as expectativas dos prazos de atendimento entre a empresa e seus clientes, gerando menos atrito e ao mesmo tempo aumentando a credibilidade."
+            },
+            "checks": [
+                "Gerencie melhor suas metas de atendimento ao cliente",
+                "Priorize adequadamente as solicitações dos seus clientes",
+                "Tenha clientes mais satisfeitos, cumpra com os prazos acordados"
+            ]
+        },
+        {
+            "indicator": {
+                "icon": "icon-workflow-o",
+                "text": "Automação e workflow"
+            },
+            "img": {
+                "class": "workflow-img",
+                "alt": "Automação e workflow"
+            },
+            "text": {
+                "title": "Automação e workflow",
+                "main": "Padronize tarefas rotineiras, ganhe escala em seu atendimento ao cliente e otimize seus processos de trabalho.",
+                "content": "Crie regras para executar dinamicamente as tarefas rotineiras de atendimento ao cliente. Gerencie de forma automatizada os processos do seu Help Desk e melhore o trafego de documentos, informações entre departamentos e pessoas."
+            },
+            "checks": [
+                "Aumente a eficiência da sua equipe e reduza custo",
+                "Otimize seu processo de atendimento ao cliente",
+                "Torne os processos mais eficientes e rastreáveis"
+            ]
+        },
+        {
+            "indicator": {
+                "icon": "icon-open-book-o",
+                "text": "Base de Conhecimento"
+            },
+            "img": {
+                "class": "knowlogment-img",
+                "alt": "Base de Conhecimento"
+            },
+            "text": {
+                "title": "Base de Conhecimento",
+                "main": "Reduza o volume de chamados e antecipe as dúvidas de seus clientes.",
+                "content": "Centralize o conhecimento da sua equipe, simplifique a experiência de autoatendimento dos clientes e reduza a quantidade de solicitações para o Help Desk."
+            },
+            "checks": [
+                "Acessível a qualquer hora e em qualquer lugar",
+                "Ofereça uma experiência de suporte personalizada",
+                "Tenha clientes mais satisfeitos com respostas mais rápidas"
+            ]
+        },
+        {
+            "indicator": {
+                "icon": "icon-chat-o",
+                "text": "Chat"
+            },
+            "img": {
+                "class": "chat-img",
+                "alt": "Chat"
+            },
+            "text": {
+                "title": "Chat",
+                "main": "Atendimento ao cliente em tempo real.",
+                "content": "Gerencie todas as suas conversas em um só lugar. Sua equipe faz atendimentos simultâneos, reduzindo o tempo de espera e aumentando a satisfação de seus clientes."
+            },
+            "checks": [
+                "Ganhe agilidade de atendimento ao cliente",
+                "Transforme conversas em chamados de maneira integrada com apenas um click",
+                "Dê sequência às conversas importantes transformando-as em chamados"
+            ]
+        },
+        {
+            "indicator": {
+                "icon": "icon-donut-chart-o",
+                "text": "Dashboard e relatórios"
+            },
+            "img": {
+                "class": "dashboard-img",
+                "alt": "Dashboard e relatórios"
+            },
+            "text": {
+                "title": "Dashboard e relatórios",
+                "main": "Entenda em detalhe sua operação de atendimento ao cliente.",
+                "content": "Gerencie com eficiência as métricas do seu Help Desk. Cruze as informações dos chamados, monitore os resultados e faça mudanças para tornar seu serviço cada vez melhor."
+            },
+            "checks": [
+                "Acompanhe os chamados",
+                "Monitore resultados e métricas",
+                "Crie relatórios personalizados apenas arrastando e solt"
+            ]
+        }
+    ]
+}

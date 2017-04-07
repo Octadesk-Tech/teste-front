@@ -1,0 +1,59 @@
+/**
+ * Folha de estilos que faz a configuração dos elementos textuais
+ * @author Vinicius Goulart Cardozo
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+.title {
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.primary-title {
+    font-weight: 200;
+    line-height: 24px;
+    font-size: 3em;
+    color: dimgrey;
+    text-align: center;
+}
+
+.secundary-title {
+    color: rgb(127, 82, 161);
+}
+
+.text {
+    font-weight: 300;
+    font-size: 1.12em;
+}
+
+.enphasis-text {
+    text-align: center;
+}
+
+.arrow {
+    max-width: 50px;
+    display: flex;
+    align-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.arrow > a {
+    align-self: center;
+    text-decoration: none;
+}
+
+.arrow > a > i:hover {
+    font-weight: 1000;
+    color: mediumpurple;
+}
+
+.arrow > a > i {
+    font-size: 500%;
+    color: dimgray;
+}

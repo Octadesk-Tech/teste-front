@@ -1,0 +1,25 @@
+{
+  "name": "teste-front",
+  "version": "1.0.0",
+  "description": "Frontend test for octadesk.com",
+  "main": "main.js",
+  "scripts": {
+    "start": "http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viniciusgcardozo/teste-front.git"
+  },
+  "author": "Vinicius Goulart Cardozo <vinicius.gcardozo@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/viniciusgcardozo/teste-front/tree/ViniciusGoulartCardozo"
+  },
+  "homepage": "https://github.com/viniciusgcardozo/teste-front#readme",
+  "dependencies": {
+    "angular": "^1.6.4",
+    "bootstrap": "^3.3.7",
+    "http-server": "^0.9.0",
+    "jquery": "^3.2.1"
+  }
+}
