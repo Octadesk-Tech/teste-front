@@ -1,0 +1,21 @@
+{
+  "name": "Front-End Test",
+  "homepage": "https://github.com/gabriel-brito/teste-front",
+  "description": "octadesk front-end",
+  "main": "index.html",
+  "authors": [
+    "Gabriel Santos"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "bootstrap": "^3.3.7",
+  }
+}
