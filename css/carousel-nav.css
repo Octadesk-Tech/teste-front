@@ -1,0 +1,85 @@
+/**
+ * Folha de estilos para o menu de navegação do slide show
+ * @author Vinicius Goulart Cardozo
+ */
+.nav-row {
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    list-style-type: none; 
+}
+
+.indicator-container {
+    width: calc(100%/6);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.indicator-container > *{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.vertical-separator {
+    position: absolute;
+    border-width: 0.1px;
+    border-style: groove;
+    -webkit-border-image: 
+      -webkit-linear-gradient(white, dimgrey, white) 1 100%;
+    -moz-border-image:
+      -moz-linear-gradient(white, dimgrey, white) 1 100%;    
+    -o-border-image:
+      -o-linear-gradient(white, dimgrey, white) 1 100%;
+    border-image:
+      inear-gradient(white, dimgrey, white) 1 100%;
+    opacity: 0.2;
+}
+
+.indicator-icon {
+    font-size: 350%; 
+    align-self: stretch;
+}
+
+.indicator-link:link { 
+    text-decoration:none;
+}
+
+.selected {
+    border-bottom: 2px solid rgb(127, 82, 161);
+}
+
+.selected > * {
+    color: rgb(127, 82, 161) !important;
+}
+
+.indicator-link > * {
+    color: dimgrey;
+    text-align: center;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.indicator-link:not(.selected):hover {
+    opacity: 0.6;
+}
+
+.indicator-link > span {
+    height: 100%;
+    align-items: flex-end;
+}
+
+@media screen and (min-width:1024px){
+    .vertical-separator {
+        height: 70px;
+    }
+}
+
+@media screen and (max-width:1024px){
+    .vertical-separator {
+        height: 50px;
+    }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Frontend test for octadesk.com">
+    <title>Octadesk</title>
+
+    <link rel="icon" type="image/x-icon" href="https://www.octadesk.com/octadesk.ico">
+    <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./node_modules/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet">
+    <link href="./icons/font/icons.css" rel="stylesheet">
+
+</head>
+
+<body ng-app="app">
+    <div ng-controller="CarouselCtrl"> <!-- Root -->
+        <section class="header-fixed"> <!-- Fixed -->
+            <header>
+                <h1 class="primary-title title">O que é o Octadesk?</h1>
+            </header>
+
+            <article>
+                <p class="enphasis-text text">
+                    Somos uma plataforma de atendimento e Help Desk que ajuda empresas a cuidar do relacionamento com
+                     seus clientes de forma organizada e flexível, com foco na qualidade e agilidade do atendimento.
+                </p>
+            </article>
+            <nav> <!-- Indexes -->
+                <ul class="nav-row">
+                    <li ng-repeat="indicator in indicators" class="indicator-container">
+                        <div ng-show="$index > 0" class="vertical-separator"></div>
+                        <a href="" ng-click="animateTransition(); select($index);" class="{{indicator.selectionClass}} indicator-link">
+                            <i class="{{indicator.icon}} indicator-icon"></i>
+                            <span class="text">{{indicator.text}}</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav> <!-- /Indexes -->
+        </section> <!-- /Fixed -->
+
+        <section class="flex-container-row"> <!-- Dynamic -->
+            <aside class="arrow arrow-left"><a ng-click="changeContent('left')"><i class="icon-arrow-left"></i></a></aside> <!-- /Left Arrow -->
+
+            <article id="content-block" class="flex-item-row"> <!-- Content -->
+
+                <div class="{{selected.img.class}} image" ></div> <!-- /Image -->
+
+                <section class="description"> <!-- Description -->
+                    <header><h3 class="secundary-title title">{{selected.text.title}}</h3></header>
+                    <article class="text">
+                        <p> <b> {{selected.text.main}} </b> </p>
+                        <p> {{selected.text.content}} </p>
+                        <div ng-repeat="check in selected.checks">
+                            <p><span class="icon-check"> </span>{{ check}}</p>
+                        </div>
+                    </article>
+                    <footer>
+                        <a class="btn">Saiba mais <i class="icon-next"></i> </a>
+                    </footer>
+                </section> <!-- /Description -->
+            </article> <!-- /Content -->
+
+            <aside class="arrow arrow-right"><a ng-click="changeContent('right')"><i class="icon-arrow-right"></i></a></aside> <!-- /Right Arrow -->
+        </section> <!-- /Dynamic -->
+    </div> <!-- /Root -->
+    
+    <!-- External Libraries -->
+    <script src="./node_modules/angular/angular.min.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    
+    <!-- Internal Modules -->
+    <script src="./js/modules/modules.js"></script>
+    <script src="./js/controllers/carousel-controller.js"></script>
+</body>
+
+</html>

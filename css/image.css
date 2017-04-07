@@ -1,0 +1,34 @@
+/**
+ * Folha de estilos que mapeia as classes de aplicação de imagens para as imagens reais
+ * @author Vinicius Goulart Cardozo
+ */
+
+.image {
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center;
+}
+
+.ticket-img {
+    background-image: url("../conteudo/canais-de-atendimento.png");
+}
+
+.deadline-img {
+    background-image: url("../conteudo/controle-de-prazos.png");
+}
+
+.workflow-img {
+    background-image: url("../conteudo/automacoes-e-workflow.png");
+}
+
+.knowlogment-img {
+    background-image: url("../conteudo/base-de-conhecimento.png");
+}
+
+.chat-img {
+    background-image: url("../conteudo/chat.png");
+}
+
+.dashboard-img {
+    background-image: url("../conteudo/dashboard-e-relatórios.png");
+}
