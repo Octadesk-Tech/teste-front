@@ -1,0 +1,268 @@
+/* Reset by Eric Meyer */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+ol, ul {
+	list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+/*fim do reset*/
+
+/*prop gerais*/
+h1,h2,h3,h4,h5,h6,li,p,div{
+	font-family: 'Lato';
+	font-weight: 300;
+	color: #666666;
+}
+h1,h3,h4{
+	font-weight: bold;	
+}
+h1{
+	font-size: 42px;
+}
+
+h3{
+	color: #7F52A1;
+	font-size: 30px;
+}
+p{
+	font-size: 15px;
+}
+li{
+    font-size: 14px;
+}
+/*fim prop gerais*/
+
+/*Header*/
+header{
+	text-align: center;
+}
+
+header,main,footer{
+	margin-top: 24px;
+}
+
+header .wrapper{
+	width: 60%;
+}
+
+.wrapper{
+	margin: 24px auto 0px auto;
+}
+/*end header*/
+/*main*/
+
+.container{
+    width: 98%;
+    max-height: 86px;
+    padding: 1%;
+}
+
+.lista-nav li{
+    display: inline-block;
+    text-align: center;
+    padding: 5% 2% 1%;
+    position: relative;
+    min-width: 9%;
+    max-width: 258px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    font-size: 16px;
+}
+.lista-nav li::after{
+    content: '';
+    height: 74px;
+    width: 1px;
+    top: 6px;
+    right: 0;
+    position: absolute;
+	background: radial-gradient(ellipse at -20% 40%, rgba(0,0,0,0.5) 0,rgba(255,255,255,0) 70%);
+}
+.lista-nav li[data-slide-to="5"]::after{
+	content: initial;
+}
+
+.lista-nav li span{
+    height: 50px;
+	width: 50px;
+    position: absolute;
+    top: 2px;
+    font-size: 47px;
+    background-size: 100%;
+    left: 50%;
+    margin-left: -13%;
+}
+.lista-nav li:hover,.lista-nav li span:hover,.lista-nav .ativo, .lista-nav .ativo span{
+    color: #7F52A1;
+}
+.lista-nav .ativo{
+    border-bottom: 2px solid #7F52A1; 
+}
+
+.lista-nav li:hover{
+	border-bottom: 2px solid #7F52A1; 
+}
+
+
+.carousel span{
+    font-size: 52px;
+    position: absolute;
+    top: 50%;
+    z-index: 100;
+}
+
+.carousel .left{
+	left: 0px;
+}
+
+.carousel .right {
+	right:0px;
+}
+
+.img-container{
+    width: 48%;
+    float: left;
+    margin: 24px;
+}
+.img-container img{
+    width: 100%;
+}
+.txt{
+	width: 43%;
+    float: left;
+    margin: 0px 24px;
+}
+
+.beneficios li{
+    padding: 0px 5px 0px 0px
+}
+
+li.icon-check.beneficio-li {
+    font-family: 'Lato', sans-serif!important;
+}
+.beneficios li::before{
+    font-family: 'octadesk' !important;
+	color:#7F52A1;
+    margin: 0px 10px 0px 0px;
+}
+
+.carousel div *:not(hgroup){
+	margin-top: 24px;
+}
+
+.btn {
+    width: 105px;
+    height: 32px;
+    border: 1px solid #7F52A1;
+    text-align: center;
+    padding: 5px 0px;
+    border-radius: 6px;
+    position: relative;
+    color: #7F52A1;
+    cursor: pointer;
+}
+span.icon-arrow-right.btn-seta {
+    font-size: 11px;
+    font-weight: bold;
+    top: -13px;
+    right: 9px;
+}	
+
+.btn:hover{
+	color: #FFF;
+	background-color: #7F52A1; 
+}
+
+/*end main*/
+
+@media screen and (max-width: 1024px) {
+    
+    .carousel-inner>div {
+        min-height: 493px;
+    }
+    .lista-nav li {
+        padding: 5% 1% 1%;
+        min-width: 16%;
+        max-width: 176px;
+        font-size: 13px;
+    }
+    .img-container {
+        width: 46%;
+        margin-top: 106px!important;
+    }
+}
+@media screen and (max-width: 768px) {
+   .lista-nav li {
+        visibility: hidden;
+        font-size: 8px;
+        min-width: 16%;
+
+   }
+   .lista-nav li span{
+        visibility: initial;
+   }
+   .carousel span{
+        top:20%;
+   }
+  .img-container,.txt{
+        width: 69%;
+        float: none;
+        margin: auto;
+        margin-top: 24px!important;
+   }
+}
+@media screen and (max-width: 480px) {
+   .lista-nav li {
+        visibility: hidden;
+        font-size: 5px;
+        max-width: 66px;
+   }
+   .lista-nav li span{
+        visibility: initial;
+        left: 16px;
+
+   }
+    .txt {
+        width: 95%;
+    }
+}
