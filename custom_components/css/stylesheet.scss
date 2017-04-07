@@ -1,0 +1,113 @@
+/* Variables */
+$activeColor: rgb(127, 82, 161);
+
+/* Patterns */
+html, body{
+	width: 100%;
+	height: 100vh;
+}
+body{
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	padding: 24px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	font-weight: 500;
+}
+/* Content */
+header{
+	width: 100%;
+	margin-bottom: 2rem;
+	.main-title{
+		font-size: 1.8em;
+		margin: 1px 0 20px;
+	}
+	p{
+		font-size: 1em;
+	    margin: 0 -40px;
+	    padding: 0 16px;
+	}
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -16px;
+    margin-left: -16px;
+}
+.nav{
+	margin-left: 1.5vw;
+    margin-bottom: 2rem;
+    list-style: none;
+    display: inline-block;
+    a{
+    	padding: 3vw;
+    	font-size: 50px;
+    	text-decoration: none;
+    	color: $activeColor;
+    }
+    ul{
+	   	display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    width: 100%;
+    }
+    ul li {
+    	display: inline;
+    	font-size: 1.11em;
+    }
+}
+.description{
+	text-align: justify;
+	padding: 4vw;
+	h3{
+		color: $activeColor;
+	}
+	.brief{
+		font-weight: 700;
+	}
+}
+.custom{
+	border: 1px solid $activeColor;
+	color: $activeColor;
+	font-size: 1.15em;
+}
+
+@media only screen and (min-width: 768px){
+	header p{
+	   margin-bottom: 1.5rem;
+	}
+	.nav a {
+	    padding: 5vw;
+	    font-size: 50px;
+	    text-decoration: none;
+	    color: #7f52a1;
+	}
+	.description{
+	   padding: 6vw;
+		img{
+			width: 90vw;
+		}
+	}
+}
+
+@media all and (min-width: 1024px){
+	#carouselContent{
+		width: 100vw;
+	}
+	.big-screens{
+		float: left;
+    	width: 40vw;
+    	margin-top: -30px;
+	}
+	.big-screens-right{
+		float: right;
+    	width: 40vw;
+    	margin-top: -80px;
+	}
+}
