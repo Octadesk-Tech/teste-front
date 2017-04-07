@@ -14,6 +14,7 @@ Gabriel Santos.
 
 
 P.S: as imagens estão todas minificadas!
+
 P.S.S: Utilizei do 'npm install http-server', então para acessar o projeto pelo servidor (localhost:8080), é necessário utilizar o comando "http-server" no cmd do seu nodeJs!
 
 https://github.com/gabriel-brito
