@@ -12,5 +12,8 @@ Atenciosamente,
 
 Gabriel Santos.
 
+
+P.S: as imagens estão todas minificadas!
+
 https://github.com/gabriel-brito
 https://medium.com/trainingcenter/um-futuro-front-end-developer-no-training-center-f4e281a5ca74
