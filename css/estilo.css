@@ -1,0 +1,70 @@
+@import url(reset.css);
+@import url(../icons/font/icons.css);
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url(header.css);
+
+*{
+	margin: 24px;
+}
+
+body{
+	width: 1280px;
+	margin: auto;
+	font-weight: 400;
+	color: #555;
+	font-family: 'Lato', sans-serif;
+}
+
+section#slider{
+	width: 45%;
+	float: left;
+}
+
+article{
+	width: 45%;
+	float: right;
+}
+
+article h2{
+	color: rgb(127, 82, 161);
+	font-weight: 500;
+}
+
+.destaque{
+	font-weight: bold;
+}
+
+article ul{
+	padding-bottom: .5em;
+}
+
+article ul li{
+	list-style: none;
+}
+
+article ul li span{
+	font-weight: 400;
+	font-family: 'Lato', sans-serif;
+}
+
+.icon-check:before {
+	color: rgb(127, 82, 161);
+}
+
+article a.botao {
+	color: rgb(127, 82, 161);
+    border: 1px solid rgb(127, 82, 161);
+    text-decoration: none;
+    border-radius: 10px;
+    padding: .5em;
+    margin: 0px 24px;
+}
+
+article a.botao:visited{
+   color: rgb(127, 82, 161);
+}
+
+
+
+
+

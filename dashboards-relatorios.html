@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/estilo.css">
+	<link rel="stylesheet" href="css/slider.css">
+	<link rel="stylesheet" href="css/breakpoints.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/responsiveslides.js"></script>
+	<script>
+		$(function () {
+	      $(".rslides").responsiveSlides({
+	        auto: true,
+	        speed: 500,
+	        maxwidth: 577,
+	        namespace: "centered-btns"
+	      });
+		});
+	</script>
+	<title>Octadesk</title>
+</head>
+<body>
+	
+	
+	<header>
+		<h1>O que é Octadesk?</h1>
+		<p>Somos uma plataforma de atendimento e Help Desk que ajuda empresas a cuidar do relacionamento com seus clientes de forma organizada e flexível, com foco na qualidade e agilidade do atendimento.</p>
+		<nav>
+			<ul>
+				<li class="unselect">
+					<a href="index.html"><img src="icons/svg/ticket-o.svg" width="48px" height="48px">Canais de atendimento</a>
+				</li>
+				<li>
+					<a href="controle-de-prazo.html"><img src="icons/svg/clock-o.svg" width="48px" height="48px">Controle de prazos</a>	
+				</li>
+				<li>
+					<a href="automacao-workflows.html"><img src="icons/svg/workflow-o.svg" width="48px" height="48px">Automações e workflow</a>	
+				</li>
+				<li>
+					<a href="base-conhecimento.html"><img src="icons/svg/open-book-o.svg" width="48px" height="48px">Base de conhecimento</a>	
+				</li>
+				<li>
+					<a href="chat.html"><img src="icons/svg/chat-o.svg" width="48px" height="48px">Chat</a>	
+				</li>
+				<li>
+					<a href="dashboards-relatorios.html"><img src="icons/svg/donut-chart-o.svg" width="48px" height="48px">Dashboards e relatórios</a>	
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>	
+
+		<section id="slider">
+			<ul class="rslides">
+			  <li><img src="conteudo/automacoes-e-workflow.png" alt="automacoes e workflow"></li>
+			  <li><img src="conteudo/base-de-conhecimento.png" alt="base de conhecimento"></li>
+			  <li><img src="conteudo/canais-de-atendimento.png" alt="canais-de-atendimento"></li>
+			  <li><img src="conteudo/chat.png" alt="chat"></li>
+			  <li><img src="conteudo/controle-de-prazos.png" alt="controle de prazos"></li>
+			  <li><img src="conteudo/dashboard-e-relatórios.png" alt="dashboard e relatórios"></li>
+			</ul>		
+		</section>
+
+
+		<article>
+			<h2>Dashboard e relatórios</h2>
+			<p class="destaque">Entenda em detalhe sua operação de atendimento ao cliente.</p>
+			<p>Gerencie com eficiência as métricas do seu Help Desk. Cruze as informações dos chamados, monitore os resultados e faça mudanças para tornar seu serviço cada vez melhor.</p>
+			<ul>
+				<div></div><li class="icon-check"><span>Acompanhe os chamados</span></li>
+				<div></div><li class="icon-check"><span>Monitore resultados e métricas</span></li>
+				<div></div><li class="icon-check"><span>Crie relatórios personalizados apenas arrastando e soltando campos</span></li>
+			</ul>
+			<a class="botao" href="#">Saiba Mais ></a>
+		</article>	
+
+
+	</main>
+	
+</body>
+</html>
