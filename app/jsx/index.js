@@ -4,5 +4,5 @@ import App from './components/App'
 
 render(
   <App />,
-  document.getElementById('container')
+  document.querySelector('.container')
 )

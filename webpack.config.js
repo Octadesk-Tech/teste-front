@@ -2,10 +2,10 @@ var CopyWebpackPlugin = require('copy-webpack-plugin')
 var path = require('path')
 
 module.exports = {
-    entry: './src/index.js',
+    entry: './app/jsx/index.js',
     output: {
         filename: 'index.js',
-        path: path.resolve(__dirname, './dist')
+        path: path.resolve(__dirname, './app')
     },
     module: {
         rules: [
@@ -22,14 +22,14 @@ module.exports = {
             }
         ]
     },
-    plugins: [
-        new CopyWebpackPlugin([
-            { from: './src/index.html' }
-        ])
-    ],
+    // plugins: [
+    //     new CopyWebpackPlugin([
+    //         { from: './src/index.html' }
+    //     ])
+    // ],
     devServer: {
         inline: true,
-        contentBase: './dist',
+        contentBase: './app',
         port: 8000
     }
 }
