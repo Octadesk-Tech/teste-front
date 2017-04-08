@@ -1,0 +1,41 @@
+{
+  "name": "teste-front",
+  "version": "1.0.0",
+  "description": "Nesta etapa, você vai precisar desenvolver um **slide-show** com base nas imagens disponíveis no diretório layout.\r O conteúdo para cada slide encontra-se no diretório \"conteudo\", os textos separados por tópicos no arquivo de extensão \".docx\", e as imagens com seus respectivos nomes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnnyGabriel/teste-front.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johnnyGabriel/teste-front/issues"
+  },
+  "homepage": "https://github.com/johnnyGabriel/teste-front#readme",
+  "scripts": {
+    "start": "webpack --watch",
+    "server": "webpack-dev-server",
+    "webpack": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "copy-webpack-plugin": "^4.0.1",
+    "eslint": "^3.19.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-react": "^6.10.3",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-slick": "^0.14.7",
+    "slick-carousel": "^1.6.0",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.2"
+  }
+}
