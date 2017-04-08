@@ -2,7 +2,7 @@ import React from 'react'
 import Slider from 'react-slick'
 import { slides } from '../../slides'
 
-const IMAGES_PATH = '../images/'
+const IMAGES_PATH = './images/'
 
 const App = () => {
 
