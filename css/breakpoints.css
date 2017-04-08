@@ -1,0 +1,49 @@
+@media screen and (max-width: 1024px) {
+	body{
+		width: 100%;
+	}
+	section#slider{
+		width: 40%;
+	}
+	article{
+		width: 45%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	nav ul{
+		margin: 0 -1em;
+	}
+	nav ul li a{
+    	font-size: 0px;
+    }
+    nav img{
+    	width: 32px;
+    	height: 32px;
+    	margin: 0px;
+    }
+    body{
+		width: 100%;
+	}
+	section#slider{
+		width: 90%;
+		float: none;
+	}
+	article{
+		width: 100%;
+		float: none;
+	}
+	.rslides img{
+		float: none;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.rslides{
+		margin: 0 -2em;
+	}
+	article{
+		width: 100%;
+    	margin: auto;
+	}
+}

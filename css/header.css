@@ -1,0 +1,57 @@
+header{
+	margin: 0px;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+}
+
+header h1{
+	text-align: center;
+	color: rgb(127, 82, 161);
+	font-weight: 500;
+}
+
+header p{
+	text-align: center;
+}
+
+nav img{
+    display: block;
+    margin: auto;
+    margin-bottom: 0.4em;
+    color: #555;
+}
+
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    width: 16%;
+    margin: auto;
+}
+
+nav ul li:not(.unselect){
+    border-left: 1px solid rgba(127, 82, 161,.5);
+}
+
+nav ul li a{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: small;
+}
+
+nav ul li a:hover{
+    border-bottom: 2px solid rgb(127, 82, 161);
+}
+
+nav ul li a:active, nav ul li a:hover, nav ul li a:visited{
+    color: rgb(127, 82, 161);
+    background-color: rgba(127, 82, 161, .2);
+}
+
+
+
+
+
+
+
