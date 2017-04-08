@@ -1,0 +1,251 @@
+@import '_componentes';
+
+[class^="icon-"], [class*=" icon-"] {
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'octadesk' !important; 	
+}
+
+.icon-ticket-o:before {
+  content: "\e900";
+}
+.icon-clock-o:before {
+  content: "\e901";
+}
+.icon-workflow-o:before {
+  content: "\e902";
+}
+.icon-open-book-o:before {
+  content: "\e903";
+}
+.icon-chat-o:before {
+  content: "\e904";
+}
+.icon-donut-chart-o:before {
+  content: "\e905";
+}
+.icon-arrow-left:before {
+  content: "\e906";
+  font-size: 2.5em;
+  color: #ccc;
+}
+.icon-arrow-right:before {
+  content: "\e907";
+  font-size: 2.5em;
+  color: #ccc;
+}
+
+.icon-check:before {
+  content: "\e908";
+  color: $corAtiva;
+    font-family: 'octadesk' !important;
+  padding-right: 3%;
+}
+.icon-previous:before {
+  content: "\e909";
+}
+.icon-next:before {
+  content: "\e90a";
+}
+
+body{
+	font-family: Lato;
+}
+
+.isHidden{
+	display:none;
+}
+
+.isShow{
+	display: block;
+}
+
+.clearfix{
+	clear:both;
+}
+
+#container{
+ width: 90%;
+ margin: 0 auto;
+ position: relative;
+ text-align: center;
+ padding-bottom: 10%;
+ h1{
+ 	line-height: 2em;
+ 	font-size:2.5em;
+ }	
+ p{
+ 	line-height: 1.5em;
+ }
+  > p{
+ 	font-size:1.2em;
+ 	width:80%;
+	margin:0 auto;
+ }
+}
+.navegacao-controle{
+	position: relative;
+	text-align: center;
+	span{
+		position: absolute;
+		top: 50%;
+		@include prefixo(transition,0.2s);
+		border-radius: 50%;
+		&:hover{
+			cursor: pointer;
+			padding: 2%;
+			background-color: $corAtiva;
+			@include prefixo(transition,0.2s);
+		}
+	}
+	span:nth-of-type(1){
+		left:0;
+	}
+	span:nth-of-type(2){
+		right:0;
+	}
+}
+
+#carousel-items{	
+	text-align: center;
+	p:nth-of-type(1){
+		font-weight:600;
+	}
+	p{
+		margin-bottom: 5%;
+	}
+	section{
+		text-align: left;
+		ul{
+			padding: 0;
+			margin-bottom: 8%;
+		}
+		li{
+			list-style: none;
+			line-height: 1.5em;
+			font-family:'Lato' !important; 
+		}
+	&:first-child{
+		span:nth-of-type(1){
+			display:none;
+		}
+	}
+
+	&:last-child{
+		span:nth-of-type(2){
+			display: none;
+		}
+	}		
+	}
+	img{
+		width: 85%;
+		padding-top: 6%;
+	}
+	h2{
+		color: $corAtiva;
+	}
+	button{
+		@include btn;
+		cursor: pointer;
+	}
+}
+
+#navegacao-slide{
+	margin: 0 auto;
+	justify-content: center;
+	margin-top: 4%;
+	align-items: center;
+	.active{
+		color: $corAtiva;
+		@include prefixo(transition,0.1s);
+		border-bottom: 4px solid $corAtiva;
+	}
+	li{	
+		cursor: pointer;
+		text-align: center;
+		display: inline;
+		border-style: solid;
+		border-width: 0 1px 0 0;
+		border-color: #ccc;
+		padding: 2% 4.4%;
+		box-sizing: border-box;
+		line-height: 1.2em;
+		@include prefixo(transition,0.1s);
+      } 
+     li:last-child{
+     	border-right-width:0; 
+     } 
+      ul{
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+#navegacao-slide{
+width: 100%;
+	li{
+		font-size: 2.5em;
+	}
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+}
+
+@media screen and (min-width: 1024px){
+#navegacao-slide{
+	width:100%;
+	li{
+		padding:0;
+		width:20%;
+	}
+}
+.navegacao-controle{	
+		width: 60%;
+		float: left;
+}
+.descricao{
+	float: right;
+	width: 40%;
+}
+.icon-ticket-o:before,.icon-clock-o:before,.icon-workflow-o:before,.icon-open-book-o:before,.icon-chat-o:before,.icon-donut-chart-o:before{
+	font-size: 3em;
+	line-height:1.5em;
+}
+
+.icon-ticket-o:after,.icon-clock-o:after,.icon-workflow-o:after,.icon-open-book-o:after,.icon-chat-o:after,.icon-donut-chart-o:after{
+  display:block;
+  font-family: 'Lato';
+  font-size:1em;
+}
+.icon-ticket-o:after{
+  content: "Canais de atendimento";	
+}
+.icon-clock-o:after {
+  content: "Controle de prazos";
+}
+.icon-workflow-o:after {
+  content: "Automa\00e7\00f5 es e workflow";
+}
+.icon-open-book-o:after {
+  content: "Base de conhecimento";
+}
+.icon-chat-o:after {
+  content: "Chat";
+}
+.icon-donut-chart-o:after {
+  content: "Dashboards e relat\00f3 rios";
+}
+}
+
+
+

@@ -1,0 +1,40 @@
+$corAtiva: rgb(127, 82, 161);
+
+@font-face{
+	font-family: Lato;
+	url:("../icons/font/fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'octadesk';
+  src:  url('../icons/font/fonts/octadesk.eot?ld7pr3');
+  src:  url('../icons/font/fonts/octadesk.eot?ld7pr3#iefix') format('embedded-opentype'),
+    url('../icons/font/fonts/octadesk.woff2?ld7pr3') format('woff2'),
+    url('../icons/font/fonts/octadesk.ttf?ld7pr3') format('truetype'),
+    url('../icons/font/fonts/octadesk.woff?ld7pr3') format('woff'),
+    url('../icons/font/fonts/octadesk.svg?ld7pr3#octadesk') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@mixin prefixo($atributo,$valor){
+  -webkit-#{$atributo}: $valor;
+  -o-#{$atributo}: $valor;
+  -ms-#{$atributo}: $valor;
+  -moz-#{$atributo}: $valor;
+  #{$atributo}: $valor;
+}
+
+@mixin btn{
+  background: none;
+  padding: 2% 5%;
+  border-style: solid;
+  border-width: 2px 1px 1px 1px;
+  border-color: $corAtiva;
+  color: $corAtiva;
+  &:hover{
+    background: $corAtiva;
+    color: #fff;
+    @include prefixo(transition,all 0.1s);
+  }
+}
