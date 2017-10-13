@@ -39,4 +39,4 @@ jspm_packages
 
 # Custom directories
 
-site/src
+site/src/*.*
