@@ -21,7 +21,8 @@
     "browser-sync": "^2.18.13",
     "gulp": "^3.9.1",
     "gulp-clean": "^0.3.2",
-    "gulp-concat": "^2.6.1"
+    "gulp-concat": "^2.6.1",
+    "gulp-less": "^3.3.2"
   },
   "dependencies": {
     "bootstrap": "^3.3.7"
