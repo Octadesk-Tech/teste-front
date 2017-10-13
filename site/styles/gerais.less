@@ -23,6 +23,7 @@ main{
         li{
             display: inline-block;
             list-style: none;
+            cursor: pointer;
             width: 200px;
             height: 75px;
             padding: 15px 0;
@@ -33,6 +34,14 @@ main{
         li:last-child{
             border-right: none;
         }
+    }
+
+    button.slick-prev.slick-arrow{
+        background-image: url('../assets/svg/arrow-left.svg');
+    }
+
+    button.slick-next.slick-arrow{
+        background-image: url('../assets/svg/arrow-right.svg');
     }
 
 }
