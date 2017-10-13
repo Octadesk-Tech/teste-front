@@ -1,0 +1,29 @@
+{
+  "name": "teste-front-octadesk",
+  "version": "1.0.0",
+  "description": "Teste para vaga front end junior octadesk",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jhoow13/teste-front.git"
+  },
+  "author": "joelcsilva@outlook.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jhoow13/teste-front/issues"
+  },
+  "homepage": "https://github.com/Jhoow13/teste-front#readme",
+  "devDependencies": {
+    "bower": "^1.8.2",
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.1"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
