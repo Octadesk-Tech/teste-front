@@ -9,7 +9,9 @@ $(document).ready(function(){
 
     $('li[data-slide]').click(function(e) {
         e.preventDefault();
-        var slideno = $(this).data('slide');
-        $('.slider-nav').slick('slickGoTo', slideno - 1);
+        var slideAtual = $(this).data('slide');
+        $('.slider-nav').slick('slickGoTo', slideAtual - 1);
+        $('li.cor-selecionado').removeClass('cor-selecionado');
+        $(this).addClass('cor-selecionado');
     });
 });
