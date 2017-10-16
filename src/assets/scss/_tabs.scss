@@ -48,31 +48,27 @@
         .carousel-controllers{
             position: absolute;
             width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                visibility: hidden;
+                display: block;
+                position: relative;
+                margin: 0 auto;
+                width: 100%;
+                @media(min-width: $notebook){
+                    width: 50%;
+                }
+            }
             a{
                 font-size: 54px;
                 position: relative;
                 display: inline;
-                top: 40px;
+                top: 50%;
                 z-index: 2;
                 
-                &#previous-slide{
-                    float: left;
-                }
-                &#next-slide{
-                    float: right;
-                }
-                @media (min-width: 450px){
-                    top: 60px;
-                }
-                @media (min-width: $tablet){
-                    top: 140px;
-                }
-                @media (min-width: $notebook){
-                    top: 185px;
-                }
-                
-            }
-            
+            }  
         }
         .tab-content{
             opacity: 0; 
