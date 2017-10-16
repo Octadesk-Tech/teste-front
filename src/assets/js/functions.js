@@ -31,20 +31,35 @@ function changeToTab(idTab, obj){
 }
 
 var nextSlide = searchElement("#next-slide").addEventListener("click", function(){  
-    var tabs = searchAllElements(".tab-name");
-    breakme: for(var i = 0; i < tabs.length; i++){
+    var tabs = searchAllElements(".tab-name"),
+        change = false;
+
+    for(var i = 0; i < tabs.length; i++){
         var currentTab = tabs[i];
-        if(currentTab.classList.contains("active")){
+        if( currentTab.classList.contains("active")){
             if(i == tabs.length -1){
                 console.log("a");
-                var nextTab = tabs[0];
-                return nextTab.firstChild.click();
+                var nextTab = tabs[0];                
+
+                if ( change === false ){
+                    console.log( change );
+                    change = true;
+                    console.log( change );
+                    setTimeout( function(){change = false; console.log( change )}, 100);
+                    return nextTab.firstChild.click();                    
+                }
             }else{
                 console.log("b");
                 var nextTab = tabs[i + 1];
-                return nextTab.firstChild.click();
+
+                if ( change === false ){
+                    console.log( change );
+                    change = true;
+                    console.log( change );
+                    setTimeout( function(){change = false; console.log( change )}, 100);
+                    return nextTab.firstChild.click();                
+                }
             }
-            break breakme;
         }
     }
 });
