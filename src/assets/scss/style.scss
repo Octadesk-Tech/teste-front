@@ -1,0 +1,57 @@
+@import "compass";
+@import "compass/reset";
+
+@import "utils/normalize";
+@import "utils/fonts";
+@import "utils/variables";
+@import "utils/base";
+@import "utils/grid";
+@import "utils/icons";
+
+@import "_tabs";
+
+
+body{
+    font-family: 'Lato';
+    font-weight: 300;
+    p, a, ul, h1, h2, h3, h4, h5, h6{
+        margin-bottom: 24px;
+        color: #666666;
+        line-height: 24px;
+    }
+    h1{
+        font-weight: 500;
+        font-size: 22px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 18px;
+    }
+    h4{
+        font-size: 16px;
+    }
+    p, li, a{
+        font-size: 14px;
+    }
+
+    @media (min-width: $notebook){
+        h1{
+            font-weight: 500;
+            font-size: 34px;
+        }
+        h2{
+            font-size: 32px;
+        }
+        h3{
+            font-size: 30px;
+        }
+        h4{
+            font-size: 28px;
+        }
+        p, li, a{
+            font-size: 16px;
+        }
+    }
+}

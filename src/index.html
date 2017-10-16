@@ -1,0 +1,222 @@
+<html ng-app="octadesk">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/assets/css/style.css">
+    </head>
+    <body ng-controller="TabsController">
+
+        <section id="main-content">
+            <div class="container-fluid">
+                <div class="content-title">
+                    <h1>O que é o Octadesk?</h1>
+                    <p>
+                        Somos uma plataforma de atedimento e Help Desk que ajuda empresas a cuidar do relacionamento com seus clientes de forma organizada e flexível, com foco na qualidade e agilidade do atendimento.
+                    </p>
+                </div>
+
+                <div class="tabs-controllers">
+                    <li class="active tab-name col-xs-2"><a class="icon-ticket-o" onclick="changeToTab('tab-canais', this)" href="#!"></a><span>Canais de atendimento</span></li>
+                    <li class="tab-name col-xs-2"><a class="icon-clock-o" onclick="changeToTab('tab-controle', this)" href="#!"></a><span>Controle de prazos</span></li>
+                    <li class="tab-name col-xs-2"><a class="icon-workflow-o" onclick="changeToTab('tab-automacoes', this)" href="#!"></a><span>Automações e Workflow</span></li>
+                    <li class="tab-name col-xs-2"><a class="icon-open-book-o" onclick="changeToTab('tab-base', this)" href="#!"></a><span>Base de conhecimento</span></li>
+                    <li class="tab-name col-xs-2"><a class="icon-chat-o" onclick="changeToTab('tab-chat', this)" href="#!"></a><span>Chat</span></li>
+                    <li class="tab-name col-xs-2"><a class="icon-donut-chart-o" onclick="changeToTab('tab-dashboards', this)" href="#!"></a><span>Dashboard e relatórios</span></li>
+                </div> <!-- /tabs-controllers -->
+
+                
+                
+                <div class="tabs">
+
+                    <div class="carousel-controllers">
+                        <a href="#!" id="previous-slide"><span class="icon-arrow-left"></span></a>
+                        <a href="#!" id="next-slide"><span class="icon-arrow-right"></span></a>
+                    </div>
+
+                    <div id="tab-canais" class="active tab-content">
+
+                        <div class="carousel">
+                            <img class="carousel-item" src="/assets/img/canais-de-atendimento.min.png" alt="Canais de Atendimento">
+                        </div>
+                        
+                        <div class="tab-text">
+                            <h3>
+                                Canais de atendimento
+                            </h3>
+                            <p>
+                                Atenda seus clientes nos múltiplos canais de contato de forma simples, rápida e organizada com nosso sistema de atendimento e Help Desk.
+                            </p>
+                            <p>
+                                Administre em um único lugar todas as solicitações dos seus clientes independente do canal de contato: telefone, e-mail, chat, formulários web, central de ajuda, base de conhecimento e redes sociais.
+                            </p>
+                            <ul>
+                                <li>
+                                    Mantenha todo o histórico de atendimento ao cliente centralizado 
+                                </li>
+                                <li>
+                                    Responda rapidamente independente do canal de contato
+                                </li>
+                                <li>
+                                    Centralize toda sua comunicação em uma única plataforma
+                                </li>
+                            </ul>
+                            <a class="btn-read-more" href="#">Saiba mais <span class="icon-next"></span></a>
+                        </div>
+                        
+                    </div>  <!-- /tab-content -->
+
+                    <div id="tab-controle" class="tab-content">
+                        <div class="carousel">
+                            <img class="carousel-item" src="/assets/img/controle-de-prazos.min.png" alt="Controle de Prazos">
+                        </div>
+                        <div class="tab-text">
+                            <h3>
+                                Controle de prazos (SLA)
+                            </h3>
+                            <p>
+                                Tenha clientes mais satisfeitos, gerencie com eficiência o prazo de resolução das solicitações.
+                            </p>
+                            <p>
+                                Com o SLA do Octadesk fica mais fácil alinhar as expectativas dos prazos de atendimento entre a empresa e seus clientes, gerando menos atrito e ao mesmo tempo aumentando a credibilidade.
+                            </p>
+                            <ul>
+                                <li>
+                                    Gerencie melhor suas metas de atendimento ao cliente
+                                </li>
+                                <li>
+                                    Priorize adequadamente as solicitações dos seus clientes
+                                </li>
+                                <li>
+                                    Tenha clientes mais satisfeitos, cumpra com os prazos acordados
+                                </li>
+                            </ul>
+                            <a class="btn-read-more" href="#">Saiba mais <span class="icon-next"></span></a>
+                        </div>
+                    </div>  <!-- /tab-content -->
+
+                    <div id="tab-automacoes" class="tab-content">
+                        <div class="carousel">
+                            <img class="carousel-item" src="/assets/img/automacoes-e-workflow.min.png" alt="Automações e Workflow">
+                        </div>
+                        <div class="tab-text">
+                            <h3>
+                                Automações e workflow
+                            </h3>
+                            <p>
+                                Padronize tarefas rotineiras, ganhe escala em seu atendimento ao cliente e otimize seus processos de trabalho.
+                            </p>
+                            <p>
+                                Crie regras para executar dinamicamente as tarefas rotineiras de atendimento ao cliente. Gerencie de forma automatizada os processos do seu Help Desk e melhore o tráfego de documentos, informações entre departamentos e pessoas.
+                            </p>
+                            <ul>
+                                <li>
+                                    Aumente a eficiência da sua equipe e reduza custo
+                                </li>
+                                <li>
+                                    Otimize seu processo de atendimento ao cliente
+                                </li>
+                                <li>
+                                    Torne os processos mais eficientes e rastreáveis
+                                </li>
+                            </ul>
+                            <a class="btn-read-more" href="#">Saiba mais <span class="icon-next"></span></a>
+                        </div>  
+                    </div>  <!-- /tab-content -->
+
+                    <div id="tab-base" class="tab-content">
+                        <div class="carousel">
+                            <img class="carousel-item" src="/assets/img/base-de-conhecimento.min.png" alt="Base de Conhecimento">
+                        </div>
+                        <div class="tab-text">
+                            <h3>
+                                Base de conhecimento
+                            </h3>
+                            <p>
+                                Reduza o volume de chamados e antecipe as dúvidas de seus clientes.
+                            </p>
+                            <p>
+                                Centralize o conhecimento da sua equipe, simplifique a experiência de autoatendimento dos clientes e reduza a quantidade de solicitações para o Help Desk.
+                            </p>
+                            <ul>
+                                <li>
+                                    Acessível a qualquer hora e em qualquer lugar
+                                </li>
+                                <li>
+                                    Ofereça uma experiência de suporte personalizada
+                                </li>
+                                <li>
+                                    Tenha clientes mais satisfeitos com respostas mais rápidas
+                                </li>
+                            </ul>
+                            <a class="btn-read-more" href="#">Saiba mais <span class="icon-next"></span></a>
+                        </div>                      
+                    </div>  <!-- /tab-content -->
+
+                    <div id="tab-chat" class="tab-content">
+                        <div class="carousel">
+                            <img class="carousel-item" src="/assets/img/chat.min.png" alt="Chat">
+                        </div>
+                        <div class="tab-text">
+                            <h3>
+                                Chat
+                            </h3>
+                            <p>
+                                Atendimento ao cliente em tempo real
+                            </p>
+                            <p>
+                                Gerencie todas as suas conversas em um só lugar. Sua equipe faz atendimentos simultâneos, reduzindo o tempo de espera e aumentando a satisfação de seus clientes.
+                            </p>
+                            <ul>
+                                <li>
+                                    Ganhe agilidade de atendimento ao cliente
+                                </li>
+                                <li>
+                                    Transforme conversas em chamados de maneira integrada com apenas um click
+                                </li>
+                                <li>
+                                    Dê sequência às conversas importantes transformando-as em chamados
+                                </li>
+                            </ul>
+                            <a class="btn-read-more" href="#">Saiba mais <span class="icon-next"></span></a>
+                        </div>
+                       
+                    </div>  <!-- /tab-content -->
+
+                    <div id="tab-dashboards" class="tab-content">
+                        <div class="carousel">
+                            <img class="carousel-item" src="/assets/img/dashboard-e-relatorios.min.png" alt="Dashboard e Relatorios">   
+                        </div>
+                        <div class="tab-text">
+                            <h3>
+                                Dashboard e relatórios
+                            </h3>
+                            <p>
+                                Entenda em detalhe sua operação de atendimento ao cliente                                    
+                            </p>
+                            <p>
+                                Gerencie com eficiência as métricas do seu Help Desk. Cruze as informações dos chamados, monitore os resultados e faça mudanças para tornar seu serviço cada vez melhor.
+                            </p>
+                            <ul>
+                                <li>
+                                   Acompanhe os chamados
+                                </li>
+                                <li>
+                                        Monitore resultados e métricas                                        
+                                </li>
+                                <li>
+                                    Crie relatórios personalizados apenas arrastando e soltando campos
+                                </li>
+                            </ul>
+                            <a class="btn-read-more" href="#">Saiba mais <span class="icon-next"></span></a>
+                        </div>
+                    </div>  <!-- /tab-content -->
+
+                </div><!-- /tabs -->
+            </div><!-- /container -->
+        </section>
+    </body>
+
+    <!-- my scripts -->
+    <script src="assets/js/functions.js"></script>
+    
+    
+</html>

@@ -1,0 +1,154 @@
+#main-content{
+    padding: $space;
+    .content-title{
+        text-align: center;
+        @media (min-width: $notebook){
+            padding: 0 20%;
+        }
+    }
+    .tabs-controllers{
+        padding-bottom: $space;
+        display: inline-block;
+        width: 100%;
+        li{
+            list-style-type: none;
+            display: inline;
+            padding-bottom: 20px;
+            text-align: center;
+
+            &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5), &:nth-child(6){
+                border-left: 1px #ddd solid;
+            }
+            &.active{
+                border-bottom: 2px $active solid;
+                a, span{
+                    color: $active;
+                }
+            }
+            a{
+                font-size: 36px;
+                display: inline;
+                
+                &:hover{
+                    color: $active;
+                }
+            }
+            span{
+                display: none;
+                padding-top: 5px;
+                @media (min-width: $notebook){
+                    display: block;
+                }
+            }
+        }
+    }
+    .tabs{
+        position: relative;
+        width: 100%;
+        .carousel-controllers{
+            position: absolute;
+            width: 100%;
+            a{
+                font-size: 54px;
+                position: relative;
+                display: inline;
+                top: 40px;
+                z-index: 2;
+                
+                &#previous-slide{
+                    float: left;
+                }
+                &#next-slide{
+                    float: right;
+                }
+                @media (min-width: 450px){
+                    top: 60px;
+                }
+                @media (min-width: $tablet){
+                    top: 140px;
+                }
+                @media (min-width: $notebook){
+                    top: 185px;
+                }
+                
+            }
+            
+        }
+        .tab-content{
+            opacity: 0; 
+            height: 0;
+            overflow: hidden;
+            @include transition-property(all);
+            @include transition-duration(0.5s);
+            @include transition-timing-function(ease-in);
+            .carousel{
+                width: 100%;
+                margin-bottom: $space;
+                .carousel-item{
+                    display: block;
+                    margin: 0 auto;
+                    width: 70%;
+                    height: auto;
+                    @media (min-width: $tablet){
+                        width: 80%;
+                    }
+                    @media (min-width: $notebook){
+                        width: 100%;
+                        padding-left: 50px;
+                        padding-right: 25px;
+                    }
+                }
+                @media (min-width: $notebook){
+                    width: 50%;
+                }
+            }
+            .tab-text{
+                h3{
+                    color: $active;
+                }
+                p:first-of-type, h3{
+                    font-weight: 700;
+                }
+                a{
+                    &.btn-read-more{
+                        display: inline-block;
+                        padding: 6px 16px;
+                        border-radius: 4px;
+                        color: $active;
+                        border: 1px solid $active;
+                        &:hover{
+                            background-color: $active;
+                            color: #fff;
+                            @include transition-property(all);
+                            @include transition-duration(0.3s);
+                            @include transition-timing-function(ease-in);
+                        }
+                    }
+                }
+                @media (min-width: $notebook){
+                    padding-right: 50px;
+                    padding-left: 25px;
+                    width: 50%;
+                }
+            }
+            li:before{
+                color: $active;
+                width: 1.3em; 
+                padding-right: 3px;
+                display: inline-block;
+                font-family: 'octadesk';
+                content: "\e908"; //check icon
+            }
+            &.active{
+                overflow: visible;
+                height: auto;
+                opacity: 1;
+            }
+            @media(min-width: $notebook){
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
