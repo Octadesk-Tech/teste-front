@@ -65,7 +65,9 @@ var nextSlide = searchElement("#next-slide").addEventListener("click", function(
 });
 
 var previousSlide = searchElement("#previous-slide").addEventListener("click", function(){
-    var tabs = searchAllElements(".tab-name");
+    var tabs = searchAllElements(".tab-name"),
+    change = false;
+    
     for(var i = 0; i < tabs.length; i++){
         var currentTab = tabs[i];
         if(currentTab.classList.contains("active")){
@@ -73,10 +75,18 @@ var previousSlide = searchElement("#previous-slide").addEventListener("click", f
             if(i == 0){
                 var lastItem = tabs.length - 1;
                 var previousTab = tabs[lastItem];
-                previousTab.firstChild.click();
+                if ( change === false ){
+                    change = true;
+                    setTimeout( function(){change = false; console.log( change )}, 100);
+                    return previousTab.firstChild.click();
+                }
             }else{
                 var previousTab = tabs[i - 1];
-                previousTab.firstChild.click();
+                if ( change === false ){
+                    change = true;
+                    setTimeout( function(){change = false; console.log( change )}, 100);
+                    return previousTab.firstChild.click();
+                }
             }
             break;
         }
