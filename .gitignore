@@ -1,3 +1,11 @@
+# Stuffs
+node_modules
+.sass-cache
+config.rb
+.DS_Store
+package-lock.json
+dist
+
 # Logs
 logs
 *.log

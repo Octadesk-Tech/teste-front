@@ -1,0 +1,21 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "author": "foster",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.17.5",
+    "connect-history-api-fallback": "^1.3.0",
+    "del": "^2.2.1",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-clean-css": "^2.0.12",
+    "gulp-compass": "^2.1.0",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-plumber": "^1.1.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-watch": "^4.3.9"
+  },
+  "dependencies": {}
+}
